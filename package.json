@@ -1,0 +1,34 @@
+{
+  "name": "pcat",
+  "version": "1.0.0",
+  "description": "PCAT Photo Blog App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalkanozgur/PCAT.git"
+  },
+  "keywords": [
+    "Patika.dev",
+    "PCAT",
+    "Photo",
+    "Blog",
+    "App"
+  ],
+  "author": "Özgür KALKAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalkanozgur/PCAT/issues"
+  },
+  "homepage": "https://github.com/kalkanozgur/PCAT#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.18",
+    "prettier": "2.7.1"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
