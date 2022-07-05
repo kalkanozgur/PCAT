@@ -1,15 +1,17 @@
 const express = require('express');
+const path = require('path');
+const ejs = require('ejs');
 
 const app = express();
+
+// TEMPLATE ENGINE
+app.set('view engine', 'ejs');
+//MIDDLEWARES
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-	const photo = {
-		id: 1,
-		name: 'Photo Name',
-		description: 'Photo description',
-	};
-	res.send(photo);
+	//res.sendFile(path.resolve(__dirname, 'views/index.html'));
+	res.render("index");
 });
 
 const port = 3000;
